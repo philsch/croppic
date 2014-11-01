@@ -188,6 +188,7 @@
 					if(response.status=='error'){
 						if (that.options.onImgUploadError) {
 							that.options.onImgUploadError.call(that, response.message);
+							that.reset();
 						} else {
 							that.obj.append('<p style="width:100%; height:100%; text-align:center; line-height:' + that.objH + 'px;">' + response.message + '</p>');
 							that.hideLoader();
