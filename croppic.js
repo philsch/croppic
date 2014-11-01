@@ -35,7 +35,7 @@
 			onImgDrag: null,
 			onImgZoom: null,
 			onBeforeImgCrop: null,
-            onImgCropError: null,
+			onImgCropError: null,
 			onAfterImgCrop: null
 		};
 
@@ -186,9 +186,9 @@
 					}
 					
 					if(response.status=='error'){
-                        if (that.options.onImgUploadError) that.options.onImgUploadError.call(that, response.message);
+						if (that.options.onImgUploadError) that.options.onImgUploadError.call(that, response.message);
 
-                        that.obj.append('<p style="width:100%; height:100%; text-align:center; line-height:'+that.objH+'px;">'+response.message+'</p>');
+						that.obj.append('<p style="width:100%; height:100%; text-align:center; line-height:'+that.objH+'px;">'+response.message+'</p>');
 						that.hideLoader();
 						setTimeout( function(){ that.reset(); },2000)
 					}
@@ -466,7 +466,7 @@
 
 					}
 					if(response.status=='error'){
-                        if (that.options.onImgCropError) that.options.onImgCropError.call(that, response.message);
+						if (that.options.onImgCropError) that.options.onImgCropError.call(that, response.message);
 						that.obj.append('<p style="width:100%; height:100%;>'+response.message+'</p>">');
 					}
 					
