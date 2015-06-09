@@ -1,0 +1,19 @@
+{
+  "name": "croppic",
+  "main": [
+      "croppic.min.js",
+      "assets/css/croppic.css"
+  ],
+  "version": "1.0.0",
+  "homepage": "https://github.com/philsch/croppic",
+  "description": "Fork of croppic, with some modifications",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
